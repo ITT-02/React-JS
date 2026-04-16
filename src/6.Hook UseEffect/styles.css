@@ -1,0 +1,99 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+html,body {
+  /*background-color: rgb(32, 32, 32);
+  color: white;*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   BOTONES GENERALES
+========================= */
+button {
+  padding: 10px;
+  font-size: 1rem;
+  margin-right: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+/* =========================
+   CONTENEDOR DE BOTONES
+========================= */
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL DE LA APP
+========================= */
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+
+/* =========================
+   MODO CLARO
+========================= */
+.app.light {
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* =========================
+   MODO OSCURO
+========================= */
+.app.dark {
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+/* =========================
+   BOTÓN  DE TEMA
+========================= */
+.theme-toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* =========================
+   TARJETA DEL CONTADOR
+========================= */
+.counter-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  min-width: 340px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   TARJETA EN MODO CLARO
+========================= */
+.app.light .counter-card {
+  background-color: white;
+  color: #000000;
+}
+
+/* =========================
+   TARJETA EN MODO OSCURO
+========================= */
+.app.dark .counter-card {
+  background-color: rgb(149, 120, 85);
+  color: white;
+}
